@@ -1,0 +1,10 @@
+flask==3.1.2
+flask-cors==6.0.5
+pandas==3.0.5
+numpy==2.5.1
+scipy==1.18.1
+scikit-learn==1.7.2
+joblib==1.6.0
+# Linux (Vercel) uses the CPU-only build: the full wheel bundles ~200MB of CUDA libs.
+xgboost-cpu==3.4.1; sys_platform == "linux"
+xgboost==3.4.1; sys_platform != "linux"

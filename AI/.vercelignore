@@ -1,0 +1,5 @@
+train.ipynb
+train.py
+.venv
+__pycache__
+*.pyc

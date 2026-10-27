@@ -1,0 +1,195 @@
+{
+  "groups": [
+    {
+      "name": "Demographics",
+      "features": [
+        {
+          "name": "gender",
+          "type": "categorical",
+          "options": [
+            "Female",
+            "Male"
+          ],
+          "default": "Male"
+        },
+        {
+          "name": "SeniorCitizen",
+          "type": "categorical",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "Partner",
+          "type": "categorical",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "Dependents",
+          "type": "categorical",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "default": "No"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "features": [
+        {
+          "name": "PhoneService",
+          "type": "categorical",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "default": "Yes"
+        },
+        {
+          "name": "MultipleLines",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No phone service",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "InternetService",
+          "type": "categorical",
+          "options": [
+            "DSL",
+            "Fiber optic",
+            "No"
+          ],
+          "default": "Fiber optic"
+        },
+        {
+          "name": "OnlineSecurity",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No internet service",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "OnlineBackup",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No internet service",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "DeviceProtection",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No internet service",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "TechSupport",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No internet service",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "StreamingTV",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No internet service",
+            "Yes"
+          ],
+          "default": "No"
+        },
+        {
+          "name": "StreamingMovies",
+          "type": "categorical",
+          "options": [
+            "No",
+            "No internet service",
+            "Yes"
+          ],
+          "default": "No"
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "features": [
+        {
+          "name": "tenure",
+          "type": "numeric",
+          "min": 0.0,
+          "max": 72.0,
+          "default": 29.0
+        },
+        {
+          "name": "Contract",
+          "type": "categorical",
+          "options": [
+            "Month-to-month",
+            "One year",
+            "Two year"
+          ],
+          "default": "Month-to-month"
+        },
+        {
+          "name": "PaperlessBilling",
+          "type": "categorical",
+          "options": [
+            "No",
+            "Yes"
+          ],
+          "default": "Yes"
+        },
+        {
+          "name": "PaymentMethod",
+          "type": "categorical",
+          "options": [
+            "Bank transfer (automatic)",
+            "Credit card (automatic)",
+            "Electronic check",
+            "Mailed check"
+          ],
+          "default": "Electronic check"
+        },
+        {
+          "name": "MonthlyCharges",
+          "type": "numeric",
+          "min": 18.4,
+          "max": 118.75,
+          "default": 70.5
+        },
+        {
+          "name": "TotalCharges",
+          "type": "numeric",
+          "min": 0.0,
+          "max": 8684.8,
+          "default": 1394.92
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "selection_metric": "f1",
+  "test_size": 1409,
+  "churn_rate": 0.2654,
+  "baselines": [
+    {
+      "key": "logistic_regression",
+      "name": "Logistic Regression",
+      "cv_f1": 0.5924,
+      "accuracy": 0.8055,
+      "precision": 0.6572,
+      "recall": 0.5588,
+      "f1": 0.604,
+      "roc_auc": 0.842,
+      "confusion_matrix": [
+        [
+          926,
+          109
+        ],
+        [
+          165,
+          209
+        ]
+      ]
+    },
+    {
+      "key": "svm",
+      "name": "Support Vector Machine",
+      "cv_f1": 0.5753,
+      "accuracy": 0.7899,
+      "precision": 0.6373,
+      "recall": 0.484,
+      "f1": 0.5502,
+      "roc_auc": 0.7928,
+      "confusion_matrix": [
+        [
+          932,
+          103
+        ],
+        [
+          193,
+          181
+        ]
+      ]
+    },
+    {
+      "key": "knn",
+      "name": "K-Nearest Neighbors",
+      "cv_f1": 0.5466,
+      "accuracy": 0.7573,
+      "precision": 0.5419,
+      "recall": 0.5535,
+      "f1": 0.5476,
+      "roc_auc": 0.7882,
+      "confusion_matrix": [
+        [
+          860,
+          175
+        ],
+        [
+          167,
+          207
+        ]
+      ]
+    },
+    {
+      "key": "decision_tree",
+      "name": "Decision Tree",
+      "cv_f1": 0.4975,
+      "accuracy": 0.7182,
+      "precision": 0.4698,
+      "recall": 0.4786,
+      "f1": 0.4742,
+      "roc_auc": 0.6415,
+      "confusion_matrix": [
+        [
+          833,
+          202
+        ],
+        [
+          195,
+          179
+        ]
+      ]
+    },
+    {
+      "key": "random_forest",
+      "name": "Random Forest",
+      "cv_f1": 0.5403,
+      "accuracy": 0.7821,
+      "precision": 0.6128,
+      "recall": 0.4866,
+      "f1": 0.5425,
+      "roc_auc": 0.8183,
+      "confusion_matrix": [
+        [
+          920,
+          115
+        ],
+        [
+          192,
+          182
+        ]
+      ]
+    },
+    {
+      "key": "adaboost",
+      "name": "AdaBoost",
+      "cv_f1": 0.5809,
+      "accuracy": 0.8006,
+      "precision": 0.644,
+      "recall": 0.5561,
+      "f1": 0.5968,
+      "roc_auc": 0.8432,
+      "confusion_matrix": [
+        [
+          920,
+          115
+        ],
+        [
+          166,
+          208
+        ]
+      ]
+    },
+    {
+      "key": "xgboost",
+      "name": "XGBoost",
+      "cv_f1": 0.559,
+      "accuracy": 0.7764,
+      "precision": 0.5897,
+      "recall": 0.5187,
+      "f1": 0.5519,
+      "roc_auc": 0.8205,
+      "confusion_matrix": [
+        [
+          900,
+          135
+        ],
+        [
+          180,
+          194
+        ]
+      ]
+    }
+  ],
+  "best": {
+    "key": "logistic_regression",
+    "name": "Logistic Regression",
+    "params": {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    "cv_f1": 0.6288,
+    "accuracy": 0.7417,
+    "precision": 0.5087,
+    "recall": 0.7861,
+    "f1": 0.6176,
+    "roc_auc": 0.8408,
+    "confusion_matrix": [
+      [
+        751,
+        284
+      ],
+      [
+        80,
+        294
+      ]
+    ]
+  }
+}
